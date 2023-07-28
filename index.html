@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blackjack - Vite</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <header class="title">
+    Blackjack
+  </header>
+
+  <div class="row mt-2">
+    <div class="col text-center">
+      <button id="btnNew" class="btn btn-danger">New Game</button>
+      <button id="btnAsk" disabled="true" class="btn btn-primary">Ask for a Card</button>
+      <button id="btnStop" disabled="true" class="btn btn-primary">Stop</button>
+    </div>
+  </div>
+
+  <div class="row container">
+    <div class="col">
+
+      <h1>Player 1 - <small>0</small></h1>
+      <div id="player-card" class="divCards">
+        <!-- <img class="theCard" src="assets/cartas/2C.png" alt="2C"> -->
+        <!-- <img class="theCard" src="assets/cartas/2C.png" alt="">
+            <img class="theCard" src="assets/cartas/2C.png" alt="">
+            <img class="theCard" src="assets/cartas/2C.png" alt="">
+            <img class="theCard" src="assets/cartas/2C.png" alt=""> -->
+      </div>
+    </div>
+  </div>
+
+  <div class="row container mt-2">
+    <div class="col">
+
+      <h1>Computer 1 - <small>0</small></h1>
+      <div id="computer-card" class="divCards">
+        <!-- <img class="theCard" src="assets/cartas/3C.png" alt="3C"> -->
+        <!-- <img class="theCard" src="assets/cartas/3C.png" alt="">
+            <img class="theCard" src="assets/cartas/3C.png" alt="">
+            <img class="theCard" src="assets/cartas/3C.png" alt="">
+            <img class="theCard" src="assets/cartas/3C.png" alt=""> -->
+      </div>
+    </div>
+  </div>
+
+  <div id="app"></div>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
